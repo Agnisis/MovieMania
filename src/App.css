@@ -39,6 +39,20 @@ h1 {
   -webkit-text-fill-color: transparent;
   width: fit-content;
 }
+.searchHeading{
+  color: #abd9e2;
+  font-size: 30px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 700;
+  
+   
+
+}
+.searchHeading:hover {
+  font-size: 40px;
+  cursor: pointer;
+  color: #f9d3b4;
+}
 
 .search {
   width: 71%;
@@ -74,7 +88,7 @@ h1 {
   cursor: pointer;
 }
 
-/* .search button {
+.search button {
   padding: 20px 40px;
   border-radius: 0.5rem;
   margin-left: 15px;
@@ -87,7 +101,7 @@ h1 {
   background: #1f2123;
   -webkit-box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
   box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
-} */
+}
 
 .empty {
   width: 100%;

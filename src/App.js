@@ -5,7 +5,7 @@ import './App.css';
 import searchIcon from './search.svg';
 // a7464dc0
 
-const API_URL = 'http://www.omdbapi.com/?i=tt3896198&apikey=ac742dc0';
+const API_URL = 'http://www.omdbapi.com/?&apikey=ac742dc0';
 
 
 const App = () => {
@@ -16,22 +16,22 @@ const App = () => {
     const searchMovies = async (title) => {
         const response = await fetch(`${API_URL}&s=${title}`);
         const data = await response.json();
-        console.log(data);
-        setMovies(data.search);
+        // console.log(data);
+        setMovies(data.Search);
     }
 
 
     useEffect(() => {
-        searchMovies('');
+        searchMovies();
     }, [])
 
 
     return (
         <div className='app'>
-            <h1>MovieLand</h1>
+            <h1>MovieMania</h1>
             <div className='search'>
                 <input
-                    placeholder='search for movies'
+                    placeholder='search movies'
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
                 />
@@ -41,17 +41,9 @@ const App = () => {
                     onClick={() => searchMovies(searchTerm)}
                 />
             </div>
-
-
-
-
-
-
-
-
-
-
-
+            <div className='searchHeading'>
+                <p>All your search results are as follows</p>
+            </div>
 
 
             {
