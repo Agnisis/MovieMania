@@ -14,7 +14,7 @@
 
 body {
   font-family: var(--font-roboto);
-  background-color: #212426;
+  background-color: #000000dd;
 }
 
 .app {
@@ -31,19 +31,37 @@ h1 {
   letter-spacing: 0.9px;
   background: linear-gradient(
     90deg,
-    rgba(249, 211, 180, 1) 0%,
-    rgba(249, 211, 180, 0) 100%
+    rgb(25, 240, 72) 0%,
+    rgba(241, 173, 117, 0) 100%
+  );
+  text-decoration:dashed;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: fit-content;
+}
+.main-heading{
+  font-size: 3rem;
+  letter-spacing: 0.9px;
+  background: linear-gradient(
+    90deg,
+    rgb(233, 69, 69) 0%,
+    rgba(174, 135, 103, 0) 110%
   );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   width: fit-content;
+  margin: 3px;
+  padding: 1rem;
+  text-align: center;
 }
 .searchHeading{
   color: #abd9e2;
   font-size: 30px;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-weight: 700;
+  text-align: center;
   
    
 
@@ -51,7 +69,7 @@ h1 {
 .searchHeading:hover {
   font-size: 40px;
   cursor: pointer;
-  color: #f9d3b4;
+  color: #747ddc;
 }
 
 .search {
@@ -242,4 +260,25 @@ h1 {
     width: "100%";
     margin: 1rem;
   }
+}
+
+
+.footer{
+  margin: 3%;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 3px;
+  border: 3px solid rgb(240, 231, 231);
+  padding: 10px;
+  background: linear-gradient(
+    90deg,
+    rgb(210, 34, 78) 0%,
+    rgba(241, 173, 117, 0) 120%
+  );
+  border-radius: 5px;
+  text-decoration:dashed;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: fit-content;
+  text-align: center;
 }
