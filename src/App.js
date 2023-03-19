@@ -21,7 +21,7 @@ const App = () => {
 
     }
 
-
+//hooks
     useEffect(() => {
         searchMovies('avatar');
     }, [])
