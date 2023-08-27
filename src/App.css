@@ -41,20 +41,17 @@ h1 {
   width: fit-content;
 }
 .main-heading{
-  font-size: 3rem;
+  font-size: 4rem;
   letter-spacing: 0.9px;
-  background: linear-gradient(
-    90deg,
-    rgb(233, 69, 69) 0%,
-    rgba(174, 135, 103, 0) 110%
-  );
+  background: linear-gradient(90deg, rgb(25, 240, 72) 0%, rgba(241, 173, 117, 0) 100%);
+  text-decoration: dashed;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   width: fit-content;
+  text-align: center;
   margin: 3px;
   padding: 1rem;
-  text-align: center;
 }
 .searchHeading{
   color: #abd9e2;
@@ -67,9 +64,8 @@ h1 {
 
 }
 .searchHeading:hover {
-  font-size: 40px;
   cursor: pointer;
-  color: #747ddc;
+  color: #d2d3e5;
 }
 
 .search {
